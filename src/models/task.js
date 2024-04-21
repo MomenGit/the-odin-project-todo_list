@@ -20,19 +20,4 @@ export default class Task extends Base {
     this.notes = notes;
     this.isDone = false;
   }
-
-  static tasksByDueDate(date) {
-    const tasks = this.all();
-    return tasks.filter((item) => item.dueDate === date);
-  }
-
-  static tasksByProject(project_id) {
-    const tasks = this.all();
-    return tasks.filter((item) => item.project_id === project_id);
-  }
-
-  static tasksByPriority(priority) {
-    const tasks = this.all();
-    return tasks.filter((item) => item.priority === priority);
-  }
 }
