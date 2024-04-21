@@ -133,3 +133,19 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 1fr;
+}
+
+.side-bar {
+	background-color: whitesmoke;
+}
+
+main {
+	background-color: rebeccapurple;
+}
